@@ -5,6 +5,7 @@ data = np.random.rand(200) ** 2
 
 # extract histogram data
 counts, x = np.histogram(data, bins='fd')
+# t
 binCents = (x[:-1] + x[1:]) / 2
 
 # convert counts to proportion
