@@ -45,6 +45,7 @@ for i in range(nSamples):
     # plot the line
     rc = np.random.uniform(low=.4, high=.8)  # random color
     axs[0].plot(xx, yy, linewidth=.5, color=(rc, rc, rc))
+    # plot the probability of the value that is closest to the mean of the sample distribution
     axs[0].plot(meenz[i], yy[np.argmin(np.abs(xx - meenz[i]))], 'k*', linewidth=.2,
                 markerfacecolor=(rc, rc, rc), markersize=12)
 
